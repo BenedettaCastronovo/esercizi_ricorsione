@@ -3,7 +3,8 @@ from time import time
 
 class Fibonacci:
     def __init__(self):
-        self.cache = {0: 0, 1: 1}
+        self.cache = {0: 0, 1: 1} #tipi di problema semplici che sapppiamo già
+        #problema:risultato
 
     def calcola_elemento_cache(self, n):
         # se ho già la soluzione per questo n
