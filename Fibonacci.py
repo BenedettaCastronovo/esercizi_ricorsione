@@ -31,6 +31,7 @@ class Fibonacci:
             self.ricorsioni += 1
             return (self.calcola_elemento(n-1) +
                     self.calcola_elemento(n-2))
+
     @lru_cache(maxsize=None)
     def calcola_elemento_lru(self,n):
         # caso terminale

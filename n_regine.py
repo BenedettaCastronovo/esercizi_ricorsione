@@ -36,8 +36,7 @@ class NRegine():
                 self.n_soluzioni += 1
                 self.soluzioni.append(copy.deepcopy(parziale))
             # print(parziale)
-        #caso ricorsivo: ho messo
-        # < N regine
+        #caso ricorsivo: ho messo # < N regine
         else:
             for riga in range(N):
                 for col in range(N):
@@ -51,7 +50,7 @@ class NRegine():
                         # backtracking
                         parziale.pop()
 
-    #confrontiamo la solluzione potenziale con tutte quelle già trovate
+    #confrontiamo la soluzione potenziale con tutte quelle già trovate
     # se è diversa, restituiamo True, altrimenti False
     def _is_nuova_soluzione(self, soluzione_potenziale) -> bool:
         N = len(soluzione_potenziale)
@@ -84,8 +83,8 @@ class NRegine():
             return False
         #3) verifico diagonale 1. Se non va bene, return False
         # per fare questa verifica devo controllare che
-        # colonna di regina1 - riga di regina1 ==
-        # colonna di regina2 - riga di regina 2
+        # riga di regina1 - colonna di regina1 ==
+        # riga di regina2 - colonna di regina 2
         if regina1[0] - regina1[1] == regina2[0] - regina2[1]:
             return False
         #4) verifico diagonale 2. Se non va bene, return False

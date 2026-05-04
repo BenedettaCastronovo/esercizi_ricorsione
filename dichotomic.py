@@ -7,7 +7,7 @@ def dichotomic(input_list, val):
             return False
     # caso ricorsivo
     else:
-        index = len(input_list)//2
+        index = len(input_list)//2 #divisione intera
         return (dichotomic(input_list[:index], val)
                 or dichotomic(input_list[index:], val))
 

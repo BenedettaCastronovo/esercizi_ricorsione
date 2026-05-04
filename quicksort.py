@@ -21,6 +21,7 @@ def quicksort(sequenza):
         #     else:
         #         sequenza_larger.append(i)
 
+        #for i in range(len(sequenza)): sequenza[i]
         sequenza_smaller = [n for n in sequenza if n < pivot]
         sequenza_pivot = [n for n in sequenza if n == pivot]
         sequenza_larger = [n for n in sequenza if n > pivot]

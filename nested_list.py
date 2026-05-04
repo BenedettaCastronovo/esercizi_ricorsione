@@ -20,3 +20,4 @@ def count_leaf_nodes(input_list):
 if __name__ == '__main__':
     names = ['Adam', ['Bob', ['Chet', 'Cat'], 'Barb', 'Bert'], 'Alex', ['Bea', 'Bill'], 'Ann']
     print(count_leaf_nodes(names)) #we expect 10
+    #ok

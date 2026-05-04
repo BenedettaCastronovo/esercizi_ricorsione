@@ -111,3 +111,5 @@ if __name__ == '__main__':
     print(f"Soluzioni trovate = {qm.n_soluzioni}")
     for soluzione in qm.soluzioni:
         qm.stampa_quadrato(soluzione)
+
+    #assurdo

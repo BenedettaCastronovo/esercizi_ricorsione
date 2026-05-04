@@ -7,7 +7,7 @@ def palyndrome(word):
                 palyndrome(word[1:-1]))
 
 def palyndrome_banale(word):
-    return word[::-1] == word
+    return word[::-1] == word #prende tutta la parola ma al contrario
 
 if __name__ == '__main__':
     print(palyndrome('casa'))
@@ -15,3 +15,4 @@ if __name__ == '__main__':
 
     print(palyndrome_banale('casa'))
     print(palyndrome_banale('civic'))
+    #ok

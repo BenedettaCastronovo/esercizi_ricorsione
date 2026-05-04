@@ -20,8 +20,7 @@ class XExpansion:
         # caso ricorsivo
         else:
             if rimanenti[0] == 'X':
-
-                #ciclare sui step possibili
+                #ciclare sugli step possibili
                 for c in ["0", "1"]:
                     parziale.append(c)
                     self._ricorsione_list(parziale, rimanenti[1:])
